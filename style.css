@@ -19,6 +19,7 @@ body {
     align-items: center;
     padding: 5px 20px;
     gap: 20px;
+    border-radius: 5px;
 }
 
 .logo-store {
@@ -27,6 +28,7 @@ body {
     color: #333;
     font-weight: bold;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .logo-store:hover {
@@ -34,4 +36,66 @@ body {
     text-shadow: 0 0 10px white, /* Sombra principal, mais difusa */
     0 0 20px rgba(255, 255, 255, 0.7), /* Sombra secundária, um pouco mais espalhada */
     0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.button-side-menu {
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #f8f9fa;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.button-side-menu:hover {
+    background: #e4e4e4;
+}
+
+.side-bar-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+
+    /* Aqui está os elementos para esconder o menu */
+    transform: translate(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.side-bar-menu aside {
+    padding: 0 20px;
+}
+
+.side-bar-menu h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255. 0.2);
+    padding-bottom: 10px;
+    color: #f0f0f0;
+}
+
+.side-bar-menu ul {
+    list-style: none;
+}
+
+.side-bar-menu li {
+    padding: 12px 0;
+    font-size: 17px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+.side-bar-menu nav li:hover {
+    background: rgba(255, 255, 255, 0.1);
 }
