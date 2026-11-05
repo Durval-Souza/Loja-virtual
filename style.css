@@ -24,9 +24,19 @@ body {
     border-radius: 5px;
 }
 
+/* logo e botão de menu em coluna */
+
+.logo-and-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
 /* Logo loja */
 
 .logo-store {
+    padding-top: 20px;
     font-size: 30px;
     text-decoration: none;
     color: #333;
@@ -106,5 +116,34 @@ body {
 
 .side-bar-menu nav li:hover {
     background: rgba(255, 255, 255, 0.1);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    
+    /* esconde menu do topo em celulares menores */
+    .menu-nav {
+        display: none;
+    }
+
+    /* Opcional: Estilo para um "overlay" que escurece a tela quando o menu está aberto */
+    /* Isso seria adicionado/removido via JS junto com a classe 'active' do menu */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vh;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease-in-out;
+    }
+
+    .overlay:active {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
