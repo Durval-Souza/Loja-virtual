@@ -10,6 +10,8 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+/* estilização Header */
+
 .header-container {
     background: orange;
     width: 100%;
@@ -21,6 +23,8 @@ body {
     gap: 20px;
     border-radius: 5px;
 }
+
+/* Logo loja */
 
 .logo-store {
     font-size: 30px;
@@ -38,6 +42,8 @@ body {
     0 0 30px rgba(255, 255, 255, 0.5);
 }
 
+/* botão para abrir menu lateral */
+
 .button-side-menu {
     border: none;
     padding: 10px 15px;
@@ -54,6 +60,8 @@ body {
 .button-side-menu:hover {
     background: #e4e4e4;
 }
+
+/* estilização barra lateral */
 
 .side-bar-menu {
     position: fixed;
@@ -99,3 +107,4 @@ body {
 .side-bar-menu nav li:hover {
     background: rgba(255, 255, 255, 0.1);
 }
+
